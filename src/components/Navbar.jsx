@@ -19,8 +19,8 @@ export default function Navbar({
             <BookOpenIcon size={24} />
           </div>
           <div>
-            <h1 className="brand-title">BookMatch AI</h1>
-            <p className="brand-subtitle">Content-Based Recommendation Engine</p>
+            <h1 className="brand-title">BookMatch</h1>
+            <p className="brand-subtitle">Book Recommendation Engine</p>
           </div>
         </div>
 

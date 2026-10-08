@@ -1,59 +1,60 @@
-# 📚 BookMatch AI - Interactive Content-Based Book Recommendation Engine
+# Book Recommendation Engine
 
-A full-featured, responsive web platform built with **React 18, JavaScript (ES6+), HTML5, CSS3**, and **Google Books REST API**. It allows users to browse rich books, **add and manage their own books**, and discover personalized book recommendations using an explainable **Content-Based Similarity Scoring Algorithm**.
+A web-based book recommendation application built with React and Vite. It helps users discover books based on genre, author, and description similarities, browse a curated library, and add their own books.
 
----
-
-## ✨ Key Features
-
-1. **➕ Add Your Own Books (Full CRUD):**
-   - Interactive modal form to enter **Title, Author(s), Genres/Categories, Synopsis/Description, Cover Image, Rating, Year, Page Count**.
-   - Immediate validation and persistent saving to **Browser LocalStorage**.
-   - Custom added books are immediately indexed by the **Recommendation Engine** to calculate similarity against all other books!
-   - Delete custom books anytime.
-
-2. **🧠 Content-Based Similarity Algorithm (Pure JavaScript):**
-   - Weighted multi-factor similarity scoring:
-     - **Category / Genre Match (40% Weight):** Jaccard Similarity index.
-     - **Author Match (30% Weight):** Direct and co-author match.
-     - **Content & Keyword Match (25% Weight):** Stop-word removal, text tokenization, and term matching across titles and descriptions.
-     - **Rating Signal (5% Weight):** Normalized quality booster.
-   - Generates **Explainable Factors** (e.g. `✓ Same author: Robert C. Martin`, `✓ Shared Category: Computers`, `✓ Shared topics: architecture, clean`).
-
-3. **📚 Rich Preloaded Seed Library:**
-   - 12+ preloaded classic and modern titles across Software Engineering (*Clean Code, Pragmatic Programmer, GoF Design Patterns, CLRS*), System Design (*DDIA*), Science Fiction (*Dune, Foundation*), and Personal Growth (*Atomic Habits, Deep Work*).
-   - Zero empty-state issues: Works flawlessly even offline or without internet access!
-
-4. **🔍 Hybrid Smart Search & Filters:**
-   - Search across titles, authors, descriptions, and genres in real-time.
-   - Categorical filter chips (*Computer Science, AI & Data, System Design, Fiction, Habits*).
-   - Collection tabs: **All Library Books** vs **👤 My Added Books**.
-
-5. **📑 Reading List & Modals:**
-   - Bookmark any book to a persistent Reading List.
-   - Rich details modal with full synopsis, metadata specs, and extracted feature tokens used by the recommendation engine.
+### Live Demo
+View the live website:  
+**https://amandadhich01.github.io/Content-Based-Book-Recommendation-Engine-/**
 
 ---
 
-## 🛠️ Tech Stack
+## Features
 
-- **Frontend:** React 18 (Hooks, useMemo, useState, useEffect, Custom State Management)
-- **Styling:** Modern CSS3 (Dark/Slate Glassmorphism UI, Responsive Flexbox/Grid, Custom Scrollbars)
-- **Data Persistence:** Browser LocalStorage
-- **Data Source:** Google Books REST API + Preloaded Master Library
-- **Build Tool:** Vite 5
+- **Book Recommendations:** Suggests related books based on matching categories, authors, and content keywords.
+- **Curated Library:** Includes preloaded titles across computer science, system design, fiction, and personal growth.
+- **Add Custom Books:** Form to add new books with titles, authors, categories, and cover images (stored locally in browser).
+- **Search & Filter:** Instant search by title or author, with category filter tags.
+- **Reading List:** Bookmark books to a saved reading list.
+- **Book Details:** View detailed synopsis, publication info, and similarity reasons.
 
 ---
 
-## 🚀 How to Run Locally
+## Tech Stack
 
-1. Open terminal in the project directory:
+- React 18
+- Vite
+- CSS3
+- LocalStorage
+
+---
+
+## How to Run Locally
+
+### Prerequisites
+Make sure you have Node.js installed on your machine.
+
+### Steps
+1. Clone the repository:
    ```bash
-   cd book-recommendation-engine-react
+   git clone https://github.com/Amandadhich01/Content-Based-Book-Recommendation-Engine-.git
+   cd Content-Based-Book-Recommendation-Engine-
    ```
-2. Run development server:
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
    ```bash
    npm run dev
    ```
-3. Or simply double-click `run.bat` on Windows!
-4. Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+4. Open the local link displayed in your terminal (typically `http://localhost:5173`).
+
+---
+
+## Author
+**Aman Dadhich**  
+- GitHub: [@Amandadhich01](https://github.com/Amandadhich01)  
+- Email: dadhichaman548@gmail.com

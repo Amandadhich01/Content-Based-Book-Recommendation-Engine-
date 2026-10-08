@@ -63,7 +63,7 @@ export default function LoginPage({ onAuthSuccess, onBackToLibrary }) {
             <div className="login-brand-icon">
               <BookOpenIcon size={28} />
             </div>
-            <h2>BookMatch AI</h2>
+            <h2>BookMatch</h2>
           </div>
 
           <div className="login-banner-content">
