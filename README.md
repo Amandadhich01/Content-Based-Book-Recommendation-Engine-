@@ -57,13 +57,3 @@ A full-featured, responsive web platform built with **React 18, JavaScript (ES6+
    ```
 3. Or simply double-click `run.bat` on Windows!
 4. Open [http://localhost:5173](http://localhost:5173) in your browser.
-
----
-
-## 🎙️ Interview Talking Points
-
-- **Why Content-Based Recommendation?**
-  *"Unlike Collaborative Filtering which requires millions of user ratings (Cold Start problem), Content-Based Filtering recommends books purely based on item metadata (genres, authors, and synopsis keywords). This makes it fast, privacy-friendly, and effective for new users and newly added books."*
-
-- **How do user-added books get recommended?**
-  *"When a user inputs a new book with a description and genre, the app normalizes the text, extracts key content tokens, and compares them against the entire library using weighted Jaccard similarity. The user can immediately click 'Find Similar' on their own book to find matching literature."*
